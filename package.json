@@ -1,22 +1,22 @@
 {
-	"name": "Groceries",
+	"name": "NativescriptIn15",
 	"version": "1.0.0",
-	"description": "A NativeScript-built iOS and Android app for managing grocery lists",
+	"description": "A minimal nativescript application",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/nativescript/sample-Groceries.git"
+		"url": "https://github.com/kanekotic/NativescriptIn15.git"
 	},
 	"keywords": [
 		"NativeScript"
 	],
-	"author": "TJ VanToll <tj.vantoll@gmail.com> (http://tjvantoll.com/)",
+	"author": "kanekotic",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/nativescript/sample-Groceries/issues"
+		"url": "https://github.com/kanekotic/NativescriptIn15/issues"
 	},
-	"homepage": "https://github.com/nativescript/sample-Groceries/groceries",
+	"homepage": "https://github.com/kanekotic/NativescriptIn15",
 	"nativescript": {
-		"id": "org.nativescript.sampleGroceries",
+		"id": "org.hatisoft.nativescriptin15",
 		"tns-android": {
 			"version": "2.0.0"
 		},
@@ -26,5 +26,12 @@
 	},
 	"dependencies": {
 		"tns-core-modules": "2.0.1"
+	},
+	"devDependencies": {
+		"babel-traverse": "6.9.0",
+		"babel-types": "6.9.1",
+		"babylon": "6.8.0",
+		"filewalker": "0.1.2",
+		"lazy": "1.0.11"
 	}
 }
