@@ -1,3 +1,15 @@
-<Page>
-    <Label text="hello world" />
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="loaded">
+  <Label text="hello world" />
+  <GridLayout columns="2*,*" rows="*, auto">
+    <ListView id="lv" items="{{ list }}" colSpan="2" row="0">
+      <ListView.itemTemplate>
+        <GridLayout columns="auto,*" class="messages">
+          <Image src="{{ img_url }}" />
+          <Label text="{{ text }}" col="1" />
+        </GridLayout>
+      </ListView.itemTemplate>
+    </ListView>
+    <TextField hint="Enter text" text="{{ textMessage }}" row="1" />
+    <Button col="1" text="Send" tap="sendText" row="1" />
+  </GridLayout>
 </Page>
